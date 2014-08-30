@@ -1,7 +1,7 @@
 MUC commands:
 =============
 
-/JOIN <room@server>[/<nick>]
+/JOIN <room@server>[/<nick>] [password]
     Join a room. If your nick is not specified, the value of the setting "nick"
     will be used as your nick in this room.
     Unlike irssi default behaviour (that you can pass a list of channels
@@ -25,6 +25,11 @@ MUC commands:
 /INVITE <jid>[/<resource>] [<room@server>]
 /INVITE <name> [<room@server>]
      Invites the specified contact to the current or specified room.
+
+Configuration file:
+========================
+{ name = "<room@server>[/<nick>] [password]"; chatnet = "<chatnet>"; autojoin = "Yes"; },
+     Add this line to chatnet section in your irssi config file.
 
 Administration commands:
 ========================
